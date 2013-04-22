@@ -1,0 +1,79 @@
+pre, body{
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height:21px;
+}
+html {
+    margin:0;
+    padding:0;
+    color:#000;
+}
+.categorized{
+    text-decoration: underline;
+    background-color: aqua;
+    font-weight: bold;
+}
+.sectionHeader{
+    font-weight:bold;
+    font-size: larger;
+}
+#wrapper {
+    width:960px;
+    margin:0 auto;
+}
+#leftToolMenu{
+    width: 220px;
+    border: 1px;
+    background-color: #a7a09a;
+    float:left;
+    min-height:450px;
+    height:auto !important;
+    padding:10px 10px 0px 10px;
+    position:fixed;
+}
+#doc{
+    background-color: #eee;
+    border-color:black;
+    border-width: 1px;
+    border-style: outset;
+    min-height:550px;
+    height:auto !important;
+    float:left;
+    width:500px;
+    position:relative;
+    margin:40px 0px 10px 220px;
+    padding:10px 0px 0px 10px;
+    text-align:justify;
+}
+#docHeader{
+    background-color: #eee;
+    border-color:black;
+    border-width: 1px;
+    border-style: outset;
+    float:left;
+    width:500px;
+    position:fixed;
+    margin:0px 0px 0px 220px;
+    padding:10px 0px 0px 10px;
+}
+#annotationCategories{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 10px;
+    list-style:none;
+    color:#686868;
+    font-weight:bold;
+    letter-spacing:-1px;
+
+}
+#annotationCategories li{
+    padding:0px 0px 0px 10px;
+    margin:4px 0px ;
+    background-color: powderblue;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#annotationCategories li:hover{
+    background-color: darkorange;
+}

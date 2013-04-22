@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link type="text/css" href="style.css" rel="stylesheet">
+    </head>
+
+<body>
+    <div id="wrapper">
+        <div id="leftToolMenu">
+            <span class="sectionHeader">Documents:</span>
+            <br/>
+            <!--TODO: replace with document browser-->
+            <select id="selDocuments" name="selDocuments">
+                <option value="">Please Select</option>
+                <option value="ch01">Chapter 01</option>
+                <option value="ch02">Chapter 02</option>
+                <option value="ch03">Chapter 03</option>
+                <option value="ch04">Chapter 04</option>
+                <option value="ch05">Chapter 05</option>
+                <option value="ch06">Chapter 06</option>
+                <option value="ch07">Chapter 07</option>
+                <option value="ch08">Chapter 08</option>
+                <option value="ch09">Chapter 09</option>
+                <option value="ch10">Chapter 10</option>
+                <option value="ch11">Chapter 11</option>
+                <option value="ch12">Chapter 12</option>
+            </select> <input type="button" value="reload" onclick="{window.alert('TODO: wire reload')}">
+            <br/>
+            <hr style="size:1px; color: black;" width="100%"/>
+            <span class="sectionHeader">Annotations:</span>
+            <br/>
+            <input type="checkbox" id="chkCopyToAll" checked />Duplicate each Annotation?
+            <ul id="annotationCategories">
+                <li id="category_1" >Location </li>
+                <li id="category_2">Organization </li>
+                <li id="category_3">People </li>
+            </ul>
+            <hr style="size:1px; color: black;" width="100%"/>
+            <input type="text" value="create new category"/><input type="button" value="add" onclick="{window.alert('TODO: wire Add Category')}">
+            <hr style="size:1px; color: black;" width="100%"/>
+            <input type="button" value="simulate Save" onclick="simulateSave()">
+        </div>
+        <div id="docHeader"><span id="docLabel" class="sectionHeader"> Document XYZ</span> <span style="margin-left:10px;">autosaved at ...  <input style="margin-left:70px;"  type="text" id="txtDocSearch" width="45" value="highlight/find" /> </span></div>
+        <pre><div id="doc">Choose a document from the drop-down on the left...<br/>Double-click or highlight text to annotate it.</div></pre>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="interaction.js"></script>
+</body>
+
+</html>
